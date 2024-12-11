@@ -1,0 +1,17 @@
+#access_menu{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: black;
+    transition: all 500ms;
+}
+#access_menu.active{
+    transform: translateY(-50%) translateX(-100%);
+}
+#access_menu button{
+    color: white;
+
+}

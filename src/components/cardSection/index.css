@@ -1,0 +1,71 @@
+.card_section{
+    position: relative;
+    padding: 5rem 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    min-height: 40vh;
+    background-color: #B1F0F7;
+    transition: all 500ms;
+}
+.card_section.dark_mode{
+    background-color: #3B1C32;
+}
+.card_section .card{
+    position: relative;
+    padding: 20px;
+    width: 220px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.card_section .card *{
+    color: black;
+
+}
+.card_section.dark_mode .card *{
+    /* box-shadow: rgba(255,255,255, 0.15) 1.95px 1.95px 2.6px; */
+    color: white ;
+}
+.card_section .card i{
+    color: white;
+}
+.card_section.dark_mode .card i{
+    color: black;
+    transition: color 500ms;
+}
+.card_section .card .card_icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.card_section .btn_box{
+    display: flex;
+}
+.card_section .card img{
+    height: 200px;
+    width: 200px;
+}
+.card_section .card h1{
+    text-align: center;
+}
+.card_section .card .card_price{
+    color: white;
+}
+.card_section .show_more_btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width:800px) {
+    .card_section{    
+        padding: 5rem 20px;
+    }
+}

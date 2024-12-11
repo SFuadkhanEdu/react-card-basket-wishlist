@@ -1,0 +1,15 @@
+footer{
+    padding: 5rem 120px;
+    
+    background-color: #F5F0CD;
+    text-align: center;
+}
+footer.dark_mode{
+    background-color: #1a1a1d;
+    color: white;
+}
+@media screen and (max-width:800px) {
+    footer{    
+        padding: 5rem 20px;
+    }
+}
